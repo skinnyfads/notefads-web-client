@@ -1,5 +1,6 @@
 import useFetch from "./functions/useFetch";
 import "./App.css";
+import Loader from "./components/Loader/Loader";
 
 interface INote {
   id: number;
@@ -40,7 +41,7 @@ function App() {
   } else {
     content = (
       <div className="content">
-        <span>Loading..</span>
+        <Loader />
       </div>
     );
   }
